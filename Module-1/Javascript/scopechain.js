@@ -34,15 +34,20 @@
 // console.log(b);
 console.log(c);
 var c=100;
+let d=0;
 {
     let a=10;
     const b=20;
     var c=90;
+    let d=90;
     console.log(a);
     console.log(b);
     console.log(c);
+    console.log(d);
 }
 // console.log(a);
 // console.log(b);
 // const c;
 console.log(c);
+console.log(d);
+
