@@ -17,6 +17,7 @@ console.log(typeof a);
 var a1=null;
 console.log(typeof a1);
 
+
 var c=true;
 console.log(typeof c);
 

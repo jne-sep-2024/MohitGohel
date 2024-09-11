@@ -4,6 +4,7 @@ let student={
     marks:56.7
 };
 console.log(student.id);
+
 console.log(typeof student);
 console.log(student["id"]);
 

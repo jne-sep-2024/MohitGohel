@@ -2,6 +2,7 @@
 
 // if(Number.isNaN(a)){
 //     // alert("Not a Number");
+
 // }
 // else if(a%5==0){
 //     alert("Divisible");

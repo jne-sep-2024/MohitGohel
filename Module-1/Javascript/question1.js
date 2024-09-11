@@ -3,6 +3,7 @@ const product={
     discount: "5%",
     name: "Parker Jotter",
     rating: 4,
+    
     big: BigInt(567898787777777777777777)
 
 };
