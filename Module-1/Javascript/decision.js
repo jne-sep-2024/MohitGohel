@@ -3,6 +3,7 @@ let a=641,b=65,c=767;
 // if(a%100===0){
 
 //     a=a/100;
+
 // }
 // if(a%4==0){
 //     console.log("leap year");

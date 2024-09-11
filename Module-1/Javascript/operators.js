@@ -10,6 +10,7 @@ console.log("a="+a++);
 console.log("a="+ ++a);
 
 
+
 a=100;
 a**=10;
 console.log(a);

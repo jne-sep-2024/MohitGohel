@@ -3,6 +3,7 @@ console.log(a);
 
 // console.log("Hello");
 
+
 a=45;
 console.log(a)
 
