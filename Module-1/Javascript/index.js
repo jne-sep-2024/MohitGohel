@@ -1,26 +1,26 @@
 
 
-function id(){
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(data =>{
-        let row="";
-        data.forEach((i)=>{
-            row+=
-            `<tr>
-                <td>${i.id}</td>
-                <td>${i.username}</td>
-                <td>${i.email}</td>
-                <td>${i.phone}</td>
-            </tr>
-            `
-      })
-      console.log(row);
-      document.getElementById("one").innerHTML = row;
-      }
-    );
-}
-// id();
+// function id(){
+//     fetch('https://jsonplaceholder.typicode.com/users')
+//       .then(response => response.json())
+//       .then(data =>{
+//         let row="";
+//         data.forEach((i)=>{
+//             row+=
+//             `<tr>
+//                 <td>${i.id}</td>
+//                 <td>${i.username}</td>
+//                 <td>${i.email}</td>
+//                 <td>${i.phone}</td>
+//             </tr>
+//             `
+//       })
+//       console.log(row);
+//       document.getElementById("one").innerHTML = row;
+//       }
+//     );
+// }
+// // id();
 
 
 // function name1(){
