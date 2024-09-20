@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            position: sticky;
+            top: 0;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(0, 0, 0, 0.6) url('https://media.geeksforgeeks.org/wp-content/uploads/20201215124609/Capture-300x14.PNG');
+            background-blend-mode: darken;
+            background-size: cover;
+            color: white;
+            padding: 10px 20px;
+            z-index: 1000; /* Ensure it stays above other content */
+        }
+
+        .rightNav h3 {
+            margin: 0;
+            color: #04AA6D;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: calc(100vh - 50px); /* Full height minus navbar height */
+            top: 50px; /* Space below the navbar */
+            overflow: auto;
+            text-align: center;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Shadow for visual separation */
+        }
+
+        .circle {
+            width: 80px;
+            height: 80px;
+            background-color: #04AA6D;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+            border-bottom: 1px solid #ddd; /* Border for separation */
+        }
+
+        .sidebar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .sidebar a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        /* Content styling */
+        .content {
+            margin-left: 200px; /* Space for the sidebar */
+            padding: 20px;
+            height: calc(100vh - 50px); /* Full height minus navbar height */
+            background-color: #f9f9f9; /* Light background for content */
+        }
+
+        /* Responsive Design (optional) */
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                top: 50px; /* Space below the navbar */
+                position: relative;
+                box-shadow: none; /* Remove shadow for small screens */
+            }
+            .content {
+                margin-left: 0; /* Full-width content */
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+            }
+        }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+    }
+
+    #addpost {
+        margin-bottom: 20px;
+    }
+    #displayblogs{
+        height: 50em;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- /////////////////////////////////////// -->
+    <nav class="navbar">
+        <div></div>
+        <div class="rightNav">
+            <h3>Mohit Gohel</h3>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <div class="circle">M</div>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="post.html">Posts</a>
+    </div>
+
+    <div class="content">
+        <button id="addpost">Add Post</button>
+        <div id="inputbox"></div>
+        <div id="displayblogs"></div>
+        <!-- <script src="post.js"></script> -->
+         <script src="post1.js"></script>
+    </div>
+</body>
+</html>
